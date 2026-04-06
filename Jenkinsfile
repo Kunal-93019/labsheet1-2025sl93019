@@ -28,8 +28,8 @@ pipeline {
             steps {
                 echo 'Deploy stage...'
                 sh '''
-                    mkdir -p /home/jenkins/deploy
-                    cp calculator.py /home/jenkins/deploy/
+                    mkdir -p /var/lib/jenkins/deploy
+                    cp calculator.py /var/lib/jenkins/deploy/
                 '''
             }
         }
